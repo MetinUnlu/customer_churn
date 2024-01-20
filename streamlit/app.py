@@ -12,11 +12,11 @@ import warnings
 warnings.filterwarnings("ignore")
 
 st.write("Current Directory:", os.getcwd())
-st.write("Absolute Path of Data File:", os.path.abspath('../data/client_data.csv'))
+st.write("Absolute Path of Data File:", os.path.abspath('data/client_data.csv'))
 
 # data_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-file_path1 = os.path.abspath('../data/client_data.csv')
-file_path2 = os.path.abspath('../data/price_data.csv')
+file_path1 = os.path.abspath('data/client_data.csv')
+file_path2 = os.path.abspath('data/price_data.csv')
 client_df = pd.read_csv(file_path1,index_col=0)
 price_df = pd.read_csv(file_path2,index_col=0)
 
@@ -119,7 +119,7 @@ Imputing missing values was primarily done using a Random Forest Classifier, foc
 """)
 
 # data_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
-file_path3 = os.path.abspath('../data/cleaned_client_data.csv')
+file_path3 = os.path.abspath('data/cleaned_client_data.csv')
 df = pd.read_csv(file_path3,index_col=0)
 
 
