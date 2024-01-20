@@ -14,8 +14,8 @@ st.write("Absolute Path of Data File:", os.path.abspath('../data/client_data.csv
 data_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 file_path1 = os.path.join(data_folder, 'client_data.csv')
 file_path2 = os.path.join(data_folder, 'price_data.csv')
-client_df = pd.read_csv('..\data\client_data.csv',index_col=0)
-price_df = pd.read_csv('..\data\price_data.csv',index_col=0)
+# client_df = pd.read_csv('..\data\client_data.csv',index_col=0)
+# price_df = pd.read_csv('..\data\price_data.csv',index_col=0)
 
 sns.set(style="whitegrid")
 
@@ -117,7 +117,7 @@ Imputing missing values was primarily done using a Random Forest Classifier, foc
 
 data_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 file_path1 = os.path.join(data_folder, 'cleaned_client_data.csv')
-df = pd.read_csv('..\data\cleaned_client_data.csv',index_col=0)
+# df = pd.read_csv('..\data\cleaned_client_data.csv',index_col=0)
 
 
 # Select numerical columns
