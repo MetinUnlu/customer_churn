@@ -5,14 +5,11 @@ import os
 import pandas as pd
 import warnings
 
-# if  os.getcwd()=="C:\Users\metin":
-
-
 # Suppress all warnings for better streamlit presentation
 warnings.filterwarnings("ignore")
 
-st.write("Current Directory:", os.getcwd())
-st.write("Absolute Path of Data File:", os.path.abspath('data/client_data.csv'))
+# st.write("Current Directory:", os.getcwd())
+# st.write("Absolute Path of Data File:", os.path.abspath('data/client_data.csv'))
 
 # data_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 file_path1 = os.path.abspath('data/client_data.csv')
